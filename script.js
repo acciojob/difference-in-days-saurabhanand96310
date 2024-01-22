@@ -1,9 +1,10 @@
 var dateDiffInDays = function (date1, date2) {
   //   write your code here
-	let day1=Date.UTC(date1);
-	let day2=Date.UTC(date2);
-	let result=(day2-day1)/8.64 x 10000000;
-	return result;
+	let day11 = new Date(date1);
+let day2 = new Date(date2);
+	let differenceInMilliseconds = day2 - day11;
+	let differenceInDays = differenceInMilliseconds / (24*60*60*1000);
+	return differenceInDays;
 };
 
 // Do not change the code below.
